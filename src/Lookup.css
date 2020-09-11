@@ -1,0 +1,185 @@
+:root {
+  --bg: #b5bdc7;
+  --bg-accent: #888c91;
+  --text-color: #f0f2f4;
+  --nav-size: 60px;
+  --border: 1px solid #888c91;
+  --border-radius: 8px;
+  --speed: 500ms;
+}
+
+/* parent box */
+
+#box {
+  width: 800px; /* 31.3% */
+  height: 500px; /* 37.5vh */
+  background-color: #95a1af;
+  border-radius: 16px;
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#box h1 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 60px; /* 2.35vw */
+  color: white;
+  text-align: center;
+  padding: 70px; /* 8.8% */
+  text-shadow: 0px 3px 20px rgba(0, 0, 0, 0.29);
+}
+
+/* end of parent box */
+/* text field (city input) */
+
+.field {
+  width: 70%; /* 70% */
+  height: 56px; /* 4.2vh */
+  border-radius: 4px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s all;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.33);
+}
+.field:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.field.active {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.field.active input {
+  padding: 24px 16px 8px 16px;
+}
+
+.field.active input + label {
+  top: 4px;
+  opacity: 1;
+  color: #512da8;
+}
+
+.field.locked {
+  pointer-events: none;
+}
+
+.field input {
+  width: 94.3%;
+  height: 56px;
+  position: relative;
+  padding: 0px 16px;
+  border: none;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 16px; /* .65vw */
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  color: #282828;
+  outline: none;
+  box-shadow: 0px 4px 20px 0px transparent;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out,
+    0.1s padding ease-in-out;
+  -webkit-appearance: none;
+}
+
+.field input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.field input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.field input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.field input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.field input + label {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.1s all ease-in-out;
+}
+
+.field input + label.error {
+  color: #ec392f;
+}
+
+.field p.predicted {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #e0e0e0;
+  opacity: 1;
+  pointer-events: none;
+}
+
+/* end of text field (city input) */
+/* search button */
+
+.btn1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 75%;
+  text-shadow: 0px 3px 20px rgba(0, 0, 0, 0.29);
+}
+
+.btn1:hover {
+  transform: translateY(-3px);
+}
+
+/* button colors and styles */
+
+.btn1--primary--solid {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+
+.btn1--primary--outline {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+/* button sizes */
+
+.btn1--medium {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.btn1--large {
+  width: 187px;
+  height: 70px;
+  font-size: 28px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.33);
+  background-color: #b5bdc7;
+  color: #f0f2f4;
+}
+
+/* end of search button */

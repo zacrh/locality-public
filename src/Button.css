@@ -1,0 +1,64 @@
+:root {
+  --primary: #779bd5;
+  --warning: #e5c80e;
+  --danger: #f00;
+  --success: #12c424;
+  --white: #fff;
+  --black: #000;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 3%;
+  text-shadow: 0px 3px 20px rgba(0, 0, 0, 0.29);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  transform: scale(1.05, 1.05);
+}
+
+/* button colors and styles */
+
+.btn--primary--solid {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+
+.btn--primary--outline {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+/* button sizes */
+
+.btn--medium {
+  width: 187px;
+  height: 70px;
+  font-size: 28px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.33);
+  background-color: #b5bdc7;
+  color: #f0f2f4;
+  border-radius: 6px;
+  top: 53%;
+  z-index: 999;
+}
+
+.btn--large {
+  width: 187px;
+  height: 70px;
+  font-size: 28px;
+  box-shadow: 0px 3px 50px rgba(119, 155, 213, 0.5);
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(119, 155, 213),
+    rgba(182, 201, 232)
+  );
+}

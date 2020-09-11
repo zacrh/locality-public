@@ -1,0 +1,94 @@
+/* search button */
+
+.btn2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: absolute;
+  text-shadow: 0px 3px 20px rgba(0, 0, 0, 0.29);
+  word-wrap: break-word;
+  padding: 20px;
+}
+
+.btn2:hover {
+  transform: translateY(-3px);
+  transform: scale(1.05, 1.05);
+}
+
+/* button colors and styles */
+
+.btn2--primary--solid {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+
+.btn2--primary--outline {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+/* button sizes */
+
+.btn2--first {
+  width: 560px;
+  height: 349px;
+  font-size: 44px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(149, 161, 175);
+  top: 15%;
+  left: 10%;
+}
+
+.btn2--second {
+  width: 560px;
+  height: 349px;
+  font-size: 44px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(149, 161, 175);
+  top: 50%;
+  left: 10%;
+}
+
+.btn2--third {
+  width: 560px;
+  height: 349px;
+  font-size: 44px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(149, 161, 175);
+  top: 15%;
+}
+
+.btn2--fourth {
+  width: 560px;
+  height: 349px;
+  font-size: 44px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(149, 161, 175);
+  top: 50%;
+}
+
+.btn2--fifth {
+  width: 560px;
+  height: 349px;
+  font-size: 44px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(149, 161, 175);
+  top: 15%;
+  right: 10%;
+}
+
+.btn2--sixth {
+  width: 560px;
+  height: 349px;
+  font-size: 44px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(149, 161, 175);
+  top: 50%;
+  right: 10%;
+}
+
+/* end of search button */

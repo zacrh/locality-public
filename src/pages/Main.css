@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.container {
+  background-image: url(../ny-background.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.btn1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 75%;
+  text-shadow: 0px 3px 20px rgba(0, 0, 0, 0.29);
+}
+
+.btn1:hover {
+  transform: translateY(-3px);
+}
+
+/* button colors and styles */
+
+.btn1--primary--solid {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+
+.btn1--primary--outline {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+/* button sizes */
+
+.btn1--medium {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.btn1--large {
+  width: 187px; /* 23% */
+  height: 70px; /* 14% */
+  font-size: 28px; /* 1.1vw */
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.33);
+  background-color: #b5bdc7;
+  color: #f0f2f4;
+}
